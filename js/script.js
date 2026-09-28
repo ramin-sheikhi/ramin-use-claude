@@ -66,7 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ---------- Typing effect ---------- */
   const typedEl = $("#typed");
-  const words = ["websites.", "brands.", "interfaces.", "experiences."];
+  const words = [
+    "fire following earthquake.",
+    "multi-hazard risk.",
+    "debris-flow impacts.",
+    "seismic resilience.",
+  ];
   let wordIndex = 0;
   let charIndex = 0;
   let deleting = false;
@@ -100,13 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const step = (now) => {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(target * eased);
+      el.textContent = Math.round(target * eased) + (progress === 1 ? el.dataset.suffix || "" : "");
       if (progress < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
   };
 
-  /* ---------- Scroll reveal, skill bars, counters ---------- */
+  /* ---------- Scroll reveal, language bars, counters ---------- */
   const observer = new IntersectionObserver(
     (entries, obs) => {
       entries.forEach((entry) => {
@@ -114,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const el = entry.target;
 
         if (el.classList.contains("reveal")) el.classList.add("visible");
-        if (el.classList.contains("skill__fill")) el.style.width = `${el.dataset.width}%`;
+        if (el.classList.contains("lang__fill")) el.style.width = `${el.dataset.width}%`;
         if (el.classList.contains("counter")) animateCounter(el);
 
         obs.unobserve(el);
@@ -123,11 +128,11 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.15 }
   );
 
-  $$(".reveal, .skill__fill, .counter").forEach((el) => observer.observe(el));
+  $$(".reveal, .lang__fill, .counter").forEach((el) => observer.observe(el));
 
-  /* ---------- Project filter ---------- */
+  /* ---------- Publication filter ---------- */
   const filters = $$(".filter");
-  const projects = $$(".project");
+  const pubs = $$(".pub");
 
   filters.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -135,10 +140,10 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.add("active");
 
       const category = btn.dataset.filter;
-      projects.forEach((project) => {
-        const match = category === "all" || project.dataset.category === category;
-        project.classList.toggle("hide", !match);
-        if (match) project.classList.add("visible");
+      pubs.forEach((pub) => {
+        const match = category === "all" || pub.dataset.category === category;
+        pub.classList.toggle("hide", !match);
+        if (match) pub.classList.add("visible");
       });
     });
   });

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ramin Sheikhi — web designer and front-end developer portfolio.">
-  <title>Ramin Sheikhi — Web Designer</title>
+  <meta name="description" content="Ramin Sheikhi Garjan — Ph.D. researcher in Structural Engineering at Ozyegin University, working on multi-hazard performance of buildings.">
+  <title>Ramin Sheikhi Garjan — Structural Engineer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,13 +17,14 @@
   <!-- ========== HEADER / NAV ========== -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#home" class="logo">Ramin<span>.</span></a>
+      <a href="#home" class="logo">R. Sheikhi<span>.</span></a>
 
       <ul class="nav__menu" id="navMenu">
-        <li><a href="#home" class="nav__link active">Home</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
-        <li><a href="#services" class="nav__link">Services</a></li>
-        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#publications" class="nav__link">Publications</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
 
@@ -44,191 +45,382 @@
     <section class="hero" id="home">
       <div class="container hero__inner">
         <div class="hero__text">
-          <p class="eyebrow"> Ramin Sheikhi the best</p>
+          <p class="eyebrow">Ph.D. Researcher · Ozyegin University</p>
           <h1 class="hero__title">
-            I design & build<br>
-            <span class="gradient-text" id="typed"></span><span class="cursor">|</span>
+            Ramin Sheikhi Garjan
           </h1>
+          <p class="hero__sub">
+            Researching <span class="gradient-text" id="typed"></span><span class="cursor">|</span>
+          </p>
           <p class="hero__desc">
-            A senior web designer crafting fast, accessible and beautiful digital
-            experiences — from the first sketch to the final line of code.
+            Structural engineer studying how buildings perform when hazards arrive in sequence —
+            earthquakes followed by fires and debris flows — using nonlinear computational models
+            in OpenSees and OpenSeesPy.
           </p>
           <div class="hero__buttons">
-            <a href="#projects" class="btn btn--primary">View my work</a>
-            <a href="#contact" class="btn btn--ghost">Let's talk</a>
+            <a href="#publications" class="btn btn--primary">View publications</a>
+            <a href="Ramin_Sheikhi_Resume.pdf" class="btn btn--ghost" download>Download CV</a>
           </div>
 
           <ul class="stats">
-            <li><strong class="counter" data-target="8">0</strong><span>Years experience</span></li>
-            <li><strong class="counter" data-target="120">0</strong><span>Projects done</span></li>
-            <li><strong class="counter" data-target="60">0</strong><span>Happy clients</span></li>
+            <li><strong class="counter" data-target="10" data-suffix="+">0</strong><span>Years in engineering</span></li>
+            <li><strong class="counter" data-target="8">0</strong><span>Publications</span></li>
+            <li><strong class="counter" data-target="2">0</strong><span>TÜBİTAK projects</span></li>
           </ul>
         </div>
 
-        <div class="hero__visual" aria-hidden="true">
-          <div class="blob"></div>
-          <div class="card-float card-float--1">
-            <span class="dot dot--green"></span> Available for work
+        <div class="hero__visual">
+          <div class="blob" aria-hidden="true"></div>
+          <div class="card-float card-float--1" aria-hidden="true">
+            <span class="dot dot--green"></span> GPA 3.91 / 4.00
           </div>
-          <div class="card-float card-float--2">
-            <strong>UI / UX</strong>
-            <small>Design systems</small>
+          <div class="card-float card-float--2" aria-hidden="true">
+            <strong>Multi-hazard</strong>
+            <small>Earthquake · Fire · Debris flow</small>
           </div>
-          <div class="avatar">RS</div>
+          <div class="avatar">
+            <img src="images/ramin-sheikhi.jpg" alt="Portrait of Ramin Sheikhi Garjan" width="372" height="491">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== ABOUT ========== -->
+    <!-- ========== ABOUT / RESEARCH INTERESTS ========== -->
     <section class="section" id="about">
       <div class="container about">
-        <div class="about__img reveal">
-          <div class="about__frame">
-            <span>&lt;/&gt;</span>
-          </div>
-        </div>
         <div class="about__content reveal">
           <p class="eyebrow">About me</p>
-          <h2 class="section__title">Design with purpose, code with care.</h2>
+          <h2 class="section__title">From design offices to multi-hazard research.</h2>
           <p>
-            I help startups and brands turn ideas into polished websites. My work sits at
-            the intersection of visual design and front-end engineering, so what you see
-            in the mockup is exactly what ships.
+            I am a Ph.D. candidate in Structural Engineering at Ozyegin University, Istanbul,
+            advised by Asst. Prof. Derya Deniz. My thesis examines the multi-hazard performance of
+            structural buildings considering fires and debris flows after earthquakes.
           </p>
+          <p>
+            Before my doctorate I spent six years as a structural engineer designing and supervising
+            reinforced concrete and steel buildings, and I carried out field reconnaissance of
+            industrial facilities after the 2023 Kahramanmaraş earthquake sequence.
+          </p>
+        </div>
 
-          <div class="skills">
-            <div class="skill">
-              <div class="skill__head"><span>HTML & CSS</span><span>95%</span></div>
-              <div class="skill__bar"><div class="skill__fill" data-width="95"></div></div>
+        <div class="interests reveal">
+          <h3 class="interests__title">Research interests</h3>
+          <ul class="interests__list">
+            <li><span>01</span>Multi-hazard performance and risk assessment of structures (fire following earthquake, debris flows)</li>
+            <li><span>02</span>Seismic and thermal analysis using computational methods (OpenSees, OpenSeesPy)</li>
+            <li><span>03</span>Structural health monitoring and damage assessment</li>
+            <li><span>04</span>Ground motion prediction and uncertainty quantification</li>
+            <li><span>05</span>Performance-based seismic design of industrial buildings</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Education</p>
+          <h2 class="section__title">Academic background</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__date">2021 – Present</span>
+              <span class="badge">GPA 3.91 / 4.00</span>
             </div>
-            <div class="skill">
-              <div class="skill__head"><span>JavaScript</span><span>88%</span></div>
-              <div class="skill__bar"><div class="skill__fill" data-width="88"></div></div>
+            <h3>Ph.D. in Structural Engineering</h3>
+            <p class="timeline__place">Ozyegin University, Istanbul, Türkiye</p>
+            <p><em>Thesis:</em> Multi-hazard Performance of Structural Buildings Considering Fires and Debris Flows After Earthquakes</p>
+            <p class="timeline__note">Advisor: Asst. Prof. Derya Deniz</p>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__date">2013 – 2015</span>
+              <span class="badge">GPA 15.7 / 20</span>
             </div>
-            <div class="skill">
-              <div class="skill__head"><span>UI / UX Design</span><span>92%</span></div>
-              <div class="skill__bar"><div class="skill__fill" data-width="92"></div></div>
+            <h3>M.Sc. in Structural Engineering</h3>
+            <p class="timeline__place">K. N. Toosi University of Technology, Tehran, Iran</p>
+            <p><em>Thesis:</em> Investigation on Seismic Behavior of Eccentric Split-X Bracing Using Incremental Dynamic Analysis</p>
+            <p class="timeline__note">Advisor: Prof. Nader Fanaie</p>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__date">2008 – 2013</span>
+              <span class="badge">GPA 16.3 / 20</span>
             </div>
-            <div class="skill">
-              <div class="skill__head"><span>React</span><span>80%</span></div>
-              <div class="skill__bar"><div class="skill__fill" data-width="80"></div></div>
+            <h3>B.Sc. in Civil Engineering</h3>
+            <p class="timeline__place">University of Mohaghegh Ardabili, Ardabil, Iran</p>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__date">2004 – 2008</span>
+              <span class="badge">GPA 18.7 / 20</span>
             </div>
+            <h3>Diploma in Mathematics and Physics</h3>
+            <p class="timeline__place">NODET (National Organization for Development of Exceptional Talents), Ardabil, Iran</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 class="section__title">Research & professional work</h2>
+        </div>
+
+        <div class="experience">
+          <article class="job reveal">
+            <div class="job__head">
+              <div>
+                <h3>Ph.D. Researcher</h3>
+                <p class="job__place">Ozyegin University, Istanbul, Türkiye</p>
+              </div>
+              <span class="timeline__date">2021 – Present</span>
+            </div>
+            <ul>
+              <li>Principal researcher on TÜBİTAK 3501 project <em>“Fire Following Earthquake in Industrial Buildings”</em> and TÜBİTAK 1719 Eureka Network project <em>“GIS-Based Platform for Urban Seismic Resilience (GURU)”</em>, funded under the Eureka Network 2024 National Call on Post-Earthquake Resilience.</li>
+              <li>Developed advanced OpenSees and OpenSeesPy models for multi-hazard evaluation of structures under sequential earthquake–fire scenarios.</li>
+              <li>Ran parametric studies and Monte Carlo simulations on fire propagation and debris-flow impacts on structural performance.</li>
+              <li>Performed field reconnaissance and data analysis after the 2023 Kahramanmaraş earthquake sequence, collaborating with international teams.</li>
+            </ul>
+          </article>
+
+          <article class="job reveal">
+            <div class="job__head">
+              <div>
+                <h3>Structural Engineer</h3>
+                <p class="job__place">Moshaverin 7 Cheshme Consulting Engineers, Ardabil, Iran</p>
+              </div>
+              <span class="timeline__date">Nov 2015 – 2021</span>
+            </div>
+            <ul>
+              <li>Designed and supervised reinforced concrete and steel buildings across residential, commercial and public infrastructure projects.</li>
+              <li>Prepared engineering drawings, technical specifications and structural analysis reports.</li>
+              <li>Coordinated with contractors and clients through to project delivery.</li>
+            </ul>
+          </article>
+
+          <article class="job reveal">
+            <div class="job__head">
+              <div>
+                <h3>Graduate Research Assistant</h3>
+                <p class="job__place">K. N. Toosi University of Technology, Tehran, Iran</p>
+              </div>
+              <span class="timeline__date">2013 – 2015</span>
+            </div>
+            <ul>
+              <li>Incremental dynamic and nonlinear time-history analyses of eccentrically braced frames with shape memory alloy (SMA) dampers.</li>
+              <li>Studied seismic performance of irregular steel frames and steel shear wall systems.</li>
+            </ul>
+          </article>
+
+          <article class="job reveal">
+            <div class="job__head">
+              <div>
+                <h3>Teaching Assistant</h3>
+                <p class="job__place">University of Mohaghegh Ardabili & Islamic Azad University, Ardabil, Iran</p>
+              </div>
+              <span class="timeline__date">2013 – 2015</span>
+            </div>
+            <ul>
+              <li>Structural Analysis I & II and Steel Structures II.</li>
+              <li>Assisted Dr. Amin Ghanadasl, Dr. Ali Mansoori and Dr. Kazem Shakeri.</li>
+            </ul>
+          </article>
+
+          <article class="job reveal">
+            <div class="job__head">
+              <div>
+                <h3>Physics & Mathematics Teacher, Educational Consultant</h3>
+                <p class="job__place">Kanun-e-Farhangi Amuzesh (Ghalamchi), Ardabil, Iran</p>
+              </div>
+              <span class="timeline__date">2008 – 2013</span>
+            </div>
+            <ul>
+              <li>Taught advanced physics and mathematics to high school students and developed curriculum materials.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PUBLICATIONS ========== -->
+    <section class="section section--alt" id="publications">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Publications</p>
+          <h2 class="section__title">Papers & proceedings</h2>
+        </div>
+
+        <div class="filters reveal">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="journal">Journal</button>
+          <button class="filter" data-filter="conference">Conference</button>
+          <button class="filter" data-filter="preparation">In preparation</button>
+        </div>
+
+        <ol class="pubs">
+          <li class="pub reveal" data-category="journal">
+            <span class="tag tag--journal">Journal · 2023</span>
+            <h3>Field reconnaissance on seismic performance and functionality of Turkish industrial facilities affected by the 2023 Kahramanmaraş earthquake sequence</h3>
+            <p class="pub__authors">G. Sagbas, <strong>R. Sheikhi</strong>, K. Sarikaya, D. Deniz</p>
+            <p class="pub__venue"><em>Bulletin of Earthquake Engineering</em>, Vol. 70, 2023</p>
+            <a class="pub__link" href="https://doi.org/10.1007/s10518-023-01741-8" target="_blank" rel="noopener">DOI: 10.1007/s10518-023-01741-8 ↗</a>
+          </li>
+          <li class="pub reveal" data-category="journal">
+            <span class="tag tag--journal">Journal · 2021</span>
+            <h3>Seismic Behaviour Assessment of Eccentrically Split-X Braced Frames</h3>
+            <p class="pub__authors"><strong>R. Sheikhi</strong>, N. Fanaie</p>
+            <p class="pub__venue"><em>Scientia Iranica</em>, Vol. 28(1), pp. 65–84, 2021</p>
+            <a class="pub__link" href="https://doi.org/10.24200/sci.2019.5054.1073" target="_blank" rel="noopener">DOI: 10.24200/sci.2019.5054.1073 ↗</a>
+          </li>
+          <li class="pub reveal" data-category="preparation">
+            <span class="tag tag--prep">In preparation · 2025</span>
+            <h3>Risk Assessment of Fire Following Earthquake in Industrial Precast Buildings</h3>
+            <p class="pub__authors"><strong>R. Sheikhi</strong>, D. Deniz</p>
+          </li>
+          <li class="pub reveal" data-category="conference">
+            <span class="tag">Conference · 2024</span>
+            <h3>Field Observations for Industrial Buildings After 2023 Kahramanmaras Earthquakes</h3>
+            <p class="pub__authors">G. Sagbas, <strong>R. Sheikhi</strong></p>
+            <p class="pub__venue"><em>Proceedings of the 7th International Conference on Earthquake Engineering</em>, 2024</p>
+          </li>
+          <li class="pub reveal" data-category="conference">
+            <span class="tag">Conference · 2024</span>
+            <h3>Structural and Nonstructural Loss Assessment Models for Industrial Facilities Affected by the 2023 Kahramanmaras Earthquakes</h3>
+            <p class="pub__authors">D. M. K. Sarikaya, G. Sagbas, N. S. Ayhan, <strong>R. Sheikhi</strong></p>
+            <p class="pub__venue"><em>6th International Disaster Resilience Congress (IDRC)</em>, Ankara, Türkiye, December 16–20, 2024</p>
+          </li>
+          <li class="pub reveal" data-category="conference">
+            <span class="tag">Conference · 2024</span>
+            <h3>Recovery Models for Industrial Buildings after the 2023 Türkiye Earthquakes</h3>
+            <p class="pub__authors">D. N. S. Ayhan, G. Sagbas, <strong>R. Sheikhi</strong>, M. K. Sarikaya</p>
+            <p class="pub__venue"><em>8th Asian-Pacific Symposium on Structural Reliability and Its Applications</em>, 2024</p>
+          </li>
+          <li class="pub reveal" data-category="conference">
+            <span class="tag">Conference · 2024</span>
+            <h3>Impact Models for Industrial Facilities Affected by the 2023 Kahramanmaras, Türkiye Earthquakes</h3>
+            <p class="pub__authors"><strong>R. Sheikhi</strong>, G. Sagbas, M. K. Sarikaya</p>
+            <p class="pub__venue"><em>Proceedings of the 18th World Conference on Earthquake Engineering (18WCEE)</em>, 2024</p>
+          </li>
+          <li class="pub reveal" data-category="conference">
+            <span class="tag">Conference · 2023</span>
+            <h3>A Multi-Hazard Resilience Framework for Residential Building Stocks subjected to Floods and Debris Flows</h3>
+            <p class="pub__authors">D. Deniz, A. Buğra Ceyhan, Y. Moaiyedfar, <strong>R. Sheikhi</strong></p>
+            <p class="pub__venue"><em>EGU General Assembly Conference Abstracts</em>, EGU-8868, 2023</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS / LANGUAGES ========== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section__title">Tools & languages</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">🏗️</div>
+            <h3>Structural Analysis</h3>
+            <ul class="chips">
+              <li>OpenSees</li><li>OpenSeesPy</li><li>ABAQUS</li><li>SAP2000</li><li>ETABS</li><li>SeismoStruct</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">📐</div>
+            <h3>Design & Drafting</h3>
+            <ul class="chips"><li>Revit</li><li>AutoCAD</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">💻</div>
+            <h3>Programming</h3>
+            <ul class="chips"><li>Python</li><li>MATLAB</li><li>TCL</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">🧰</div>
+            <h3>General Tools</h3>
+            <ul class="chips"><li>LaTeX</li><li>GitHub</li><li>Advanced Excel</li><li>Microsoft Office</li></ul>
+          </div>
+        </div>
+
+        <div class="languages reveal">
+          <h3>Languages</h3>
+          <div class="lang">
+            <div class="lang__head"><span>Persian (Farsi)</span><span>Native</span></div>
+            <div class="lang__bar"><div class="lang__fill" data-width="100"></div></div>
+          </div>
+          <div class="lang">
+            <div class="lang__head"><span>Azerbaijani</span><span>Native</span></div>
+            <div class="lang__bar"><div class="lang__fill" data-width="100"></div></div>
+          </div>
+          <div class="lang">
+            <div class="lang__head"><span>Turkish</span><span>Fluent</span></div>
+            <div class="lang__bar"><div class="lang__fill" data-width="85"></div></div>
+          </div>
+          <div class="lang">
+            <div class="lang__head"><span>English</span><span>Fluent</span></div>
+            <div class="lang__bar"><div class="lang__fill" data-width="85"></div></div>
+          </div>
+          <div class="lang">
+            <div class="lang__head"><span>Arabic</span><span>Basic reading & writing</span></div>
+            <div class="lang__bar"><div class="lang__fill" data-width="30"></div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== SERVICES ========== -->
-    <section class="section section--alt" id="services">
+    <!-- ========== HONORS ========== -->
+    <section class="section section--alt" id="honors">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow">What I do</p>
-          <h2 class="section__title">Services</h2>
+          <p class="eyebrow">Recognition</p>
+          <h2 class="section__title">Honors & awards</h2>
         </div>
 
-        <div class="services">
-          <article class="service reveal">
-            <div class="service__icon">🎨</div>
-            <h3>UI / UX Design</h3>
-            <p>User research, wireframes and pixel-perfect interfaces designed in Figma.</p>
+        <div class="awards">
+          <article class="award reveal">
+            <span class="award__icon">🏆</span>
+            <h3>Top 1% nationwide</h3>
+            <p>Ranked 353rd among 35,643 participants in Iran's Nationwide M.Sc. Entrance Examination, 2013.</p>
           </article>
-          <article class="service reveal">
-            <div class="service__icon">💻</div>
-            <h3>Web Development</h3>
-            <p>Semantic HTML, modern CSS and clean JavaScript that loads fast everywhere.</p>
+          <article class="award reveal">
+            <span class="award__icon">🎓</span>
+            <h3>Full Ph.D. Scholarship</h3>
+            <p>Awarded a full doctoral scholarship at Ozyegin University, Türkiye, 2021.</p>
           </article>
-          <article class="service reveal">
-            <div class="service__icon">📱</div>
-            <h3>Responsive Design</h3>
-            <p>Layouts that look great on every screen, from phones to wide monitors.</p>
+          <article class="award reveal">
+            <span class="award__icon">📜</span>
+            <h3>Full M.Sc. Scholarship</h3>
+            <p>Awarded by the Ministry of Science, Research and Technology, Iran.</p>
           </article>
-          <article class="service reveal">
-            <div class="service__icon">🚀</div>
-            <h3>Performance & SEO</h3>
-            <p>Audits and optimizations that improve Core Web Vitals and search ranking.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== PROJECTS ========== -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">Portfolio</p>
-          <h2 class="section__title">Recent projects</h2>
-        </div>
-
-        <div class="filters reveal" role="tablist">
-          <button class="filter active" data-filter="all">All</button>
-          <button class="filter" data-filter="web">Web</button>
-          <button class="filter" data-filter="ui">UI Design</button>
-          <button class="filter" data-filter="app">Apps</button>
-        </div>
-
-        <div class="projects" id="projectGrid">
-          <article class="project reveal" data-category="web">
-            <div class="project__thumb thumb--1"><span>Shopline</span></div>
-            <div class="project__body">
-              <span class="tag">Web</span>
-              <h3>Shopline E-commerce</h3>
-              <p>A headless storefront with a 98 Lighthouse score.</p>
-            </div>
-          </article>
-          <article class="project reveal" data-category="ui">
-            <div class="project__thumb thumb--2"><span>Finly</span></div>
-            <div class="project__body">
-              <span class="tag">UI Design</span>
-              <h3>Finly Dashboard</h3>
-              <p>Banking dashboard and complete design system.</p>
-            </div>
-          </article>
-          <article class="project reveal" data-category="app">
-            <div class="project__thumb thumb--3"><span>Fitly</span></div>
-            <div class="project__body">
-              <span class="tag">App</span>
-              <h3>Fitly Workout App</h3>
-              <p>Progressive web app for tracking daily workouts.</p>
-            </div>
-          </article>
-          <article class="project reveal" data-category="web">
-            <div class="project__thumb thumb--4"><span>Nomad</span></div>
-            <div class="project__body">
-              <span class="tag">Web</span>
-              <h3>Nomad Travel</h3>
-              <p>Travel blog with interactive maps and trip planner.</p>
-            </div>
-          </article>
-          <article class="project reveal" data-category="ui">
-            <div class="project__thumb thumb--5"><span>Brew</span></div>
-            <div class="project__body">
-              <span class="tag">UI Design</span>
-              <h3>Brew Coffee Brand</h3>
-              <p>Brand identity and landing page for a coffee roaster.</p>
-            </div>
-          </article>
-          <article class="project reveal" data-category="app">
-            <div class="project__thumb thumb--6"><span>Notely</span></div>
-            <div class="project__body">
-              <span class="tag">App</span>
-              <h3>Notely</h3>
-              <p>Minimal note-taking app with offline sync.</p>
-            </div>
+          <article class="award reveal">
+            <span class="award__icon">🔬</span>
+            <h3>TÜBİTAK 3501 Principal Investigator</h3>
+            <p>Career Development Project “Fire Following Earthquake in Industrial Buildings”, funded by the Scientific and Technological Research Council of Türkiye.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ========== CONTACT ========== -->
-    <section class="section section--alt" id="contact">
+    <section class="section" id="contact">
       <div class="container contact">
         <div class="contact__info reveal">
           <p class="eyebrow">Contact</p>
-          <h2 class="section__title">Have a project in mind?</h2>
-          <p>Send me a message and I'll get back to you within 24 hours.</p>
+          <h2 class="section__title">Let's collaborate.</h2>
+          <p>Open to research collaborations, postdoctoral opportunities and engineering consultancy.</p>
           <ul class="contact__list">
-            <li><span>✉</span> hello@ramin.dev</li>
+            <li><span>✉</span><a href="mailto:ramin.sheikhi@ozu.edu.tr">ramin.sheikhi@ozu.edu.tr</a></li>
             <li><span>📍</span> Istanbul, Türkiye</li>
+            <li><span>🎓</span><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar ↗</a></li>
           </ul>
         </div>
 
@@ -245,7 +437,7 @@
           </div>
           <div class="form__group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
             <small class="form__error"></small>
           </div>
           <button type="submit" class="btn btn--primary btn--full">Send message</button>
@@ -258,11 +450,11 @@
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> Ramin Sheikhi. All rights reserved.</p>
+      <p>© <span id="year"></span> Ramin Sheikhi Garjan</p>
       <div class="socials">
-        <a href="#" aria-label="GitHub">GitHub</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Dribbble">Dribbble</a>
+        <a href="mailto:ramin.sheikhi@ozu.edu.tr">Email</a>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://github.com/ramin-sheikhi" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </footer>
