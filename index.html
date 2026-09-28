@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ramin Sheikhi — web designer and front-end developer portfolio.">
+  <title>Ramin Sheikhi — Web Designer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Ramin<span>.</span></a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Hello, I'm Ramin Sheikhi</p>
+          <h1 class="hero__title">
+            I design & build<br>
+            <span class="gradient-text" id="typed"></span><span class="cursor">|</span>
+          </h1>
+          <p class="hero__desc">
+            A senior web designer crafting fast, accessible and beautiful digital
+            experiences — from the first sketch to the final line of code.
+          </p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">View my work</a>
+            <a href="#contact" class="btn btn--ghost">Let's talk</a>
+          </div>
+
+          <ul class="stats">
+            <li><strong class="counter" data-target="8">0</strong><span>Years experience</span></li>
+            <li><strong class="counter" data-target="120">0</strong><span>Projects done</span></li>
+            <li><strong class="counter" data-target="60">0</strong><span>Happy clients</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="card-float card-float--1">
+            <span class="dot dot--green"></span> Available for work
+          </div>
+          <div class="card-float card-float--2">
+            <strong>UI / UX</strong>
+            <small>Design systems</small>
+          </div>
+          <div class="avatar">RS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__img reveal">
+          <div class="about__frame">
+            <span>&lt;/&gt;</span>
+          </div>
+        </div>
+        <div class="about__content reveal">
+          <p class="eyebrow">About me</p>
+          <h2 class="section__title">Design with purpose, code with care.</h2>
+          <p>
+            I help startups and brands turn ideas into polished websites. My work sits at
+            the intersection of visual design and front-end engineering, so what you see
+            in the mockup is exactly what ships.
+          </p>
+
+          <div class="skills">
+            <div class="skill">
+              <div class="skill__head"><span>HTML & CSS</span><span>95%</span></div>
+              <div class="skill__bar"><div class="skill__fill" data-width="95"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>JavaScript</span><span>88%</span></div>
+              <div class="skill__bar"><div class="skill__fill" data-width="88"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>UI / UX Design</span><span>92%</span></div>
+              <div class="skill__bar"><div class="skill__fill" data-width="92"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>React</span><span>80%</span></div>
+              <div class="skill__bar"><div class="skill__fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">What I do</p>
+          <h2 class="section__title">Services</h2>
+        </div>
+
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__icon">🎨</div>
+            <h3>UI / UX Design</h3>
+            <p>User research, wireframes and pixel-perfect interfaces designed in Figma.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Semantic HTML, modern CSS and clean JavaScript that loads fast everywhere.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Layouts that look great on every screen, from phones to wide monitors.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">🚀</div>
+            <h3>Performance & SEO</h3>
+            <p>Audits and optimizations that improve Core Web Vitals and search ranking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2 class="section__title">Recent projects</h2>
+        </div>
+
+        <div class="filters reveal" role="tablist">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="ui">UI Design</button>
+          <button class="filter" data-filter="app">Apps</button>
+        </div>
+
+        <div class="projects" id="projectGrid">
+          <article class="project reveal" data-category="web">
+            <div class="project__thumb thumb--1"><span>Shopline</span></div>
+            <div class="project__body">
+              <span class="tag">Web</span>
+              <h3>Shopline E-commerce</h3>
+              <p>A headless storefront with a 98 Lighthouse score.</p>
+            </div>
+          </article>
+          <article class="project reveal" data-category="ui">
+            <div class="project__thumb thumb--2"><span>Finly</span></div>
+            <div class="project__body">
+              <span class="tag">UI Design</span>
+              <h3>Finly Dashboard</h3>
+              <p>Banking dashboard and complete design system.</p>
+            </div>
+          </article>
+          <article class="project reveal" data-category="app">
+            <div class="project__thumb thumb--3"><span>Fitly</span></div>
+            <div class="project__body">
+              <span class="tag">App</span>
+              <h3>Fitly Workout App</h3>
+              <p>Progressive web app for tracking daily workouts.</p>
+            </div>
+          </article>
+          <article class="project reveal" data-category="web">
+            <div class="project__thumb thumb--4"><span>Nomad</span></div>
+            <div class="project__body">
+              <span class="tag">Web</span>
+              <h3>Nomad Travel</h3>
+              <p>Travel blog with interactive maps and trip planner.</p>
+            </div>
+          </article>
+          <article class="project reveal" data-category="ui">
+            <div class="project__thumb thumb--5"><span>Brew</span></div>
+            <div class="project__body">
+              <span class="tag">UI Design</span>
+              <h3>Brew Coffee Brand</h3>
+              <p>Brand identity and landing page for a coffee roaster.</p>
+            </div>
+          </article>
+          <article class="project reveal" data-category="app">
+            <div class="project__thumb thumb--6"><span>Notely</span></div>
+            <div class="project__body">
+              <span class="tag">App</span>
+              <h3>Notely</h3>
+              <p>Minimal note-taking app with offline sync.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title">Have a project in mind?</h2>
+          <p>Send me a message and I'll get back to you within 24 hours.</p>
+          <ul class="contact__list">
+            <li><span>✉</span> hello@ramin.dev</li>
+            <li><span>📍</span> Istanbul, Türkiye</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <small class="form__error"></small>
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <small class="form__error"></small>
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            <small class="form__error"></small>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send message</button>
+          <p class="form__success" id="formSuccess" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Ramin Sheikhi. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Dribbble">Dribbble</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
